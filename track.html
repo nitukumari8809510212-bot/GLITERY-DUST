@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Track Order - Glitery Dust</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Track Your Order</h1>
+
+<input type="text" id="orderInput" placeholder="Enter Order ID">
+
+<button onclick="trackOrder()">Track</button>
+
+<h2 id="result"></h2>
+
+<script>
+
+function trackOrder(){
+
+let storedId = localStorage.getItem("orderId");
+let status = localStorage.getItem("orderStatus");
+
+let input = document.getElementById("orderInput").value;
+
+if(input === storedId){
+
+document.getElementById("result").innerText =
+"Status: " + status;
+
+}else{
+
+document.getElementById("result").innerText =
+"Order not found";
+
+}
+
+}
+
+</script>
+
+</body>
+</html>

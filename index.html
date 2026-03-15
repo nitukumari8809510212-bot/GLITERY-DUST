@@ -1,27 +1,139 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-<title>Glitery Dust Makeup</title>
+<title>Glitery Dust</title>
+
 <link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
 <header>
+
 <h1>✨ Glitery Dust</h1>
+
 <nav>
-<a href="index.html">Home</a>
-<a href="cart.html">🛒 Cart</a>
+<a href="#">Home</a>
+<a href="cart.html">Cart</a>
+<a href="track.html">Track Order</a>
 </nav>
+
 </header>
 
-<section class="banner">
-<h2>Luxury Makeup Collection</h2>
-<p>Discover beauty products that make you shine.</p>
+
+<section class="hero">
+
+<h2>Shine With Beauty</h2>
+
+<p>Premium Makeup Collection</p>
+
+<a href="#products">
+<button>Shop Now</button>
+</a>
+
 </section>
 
-<div class="products" id="product-list"></div>
+
+<section class="products" id="products">
+
+<h2 class="section-title">Featured Products</h2>
+
+
+<div class="product">
+
+<img src="images/lipstick.jpg">
+
+<h3>Matte Lipstick</h3>
+
+<p>$15</p>
+
+<button onclick="addToCart(1)">Add to Cart</button>
+
+<button class="buy">Buy Now</button>
+
+</div>
+
+
+<div class="product">
+
+<img src="images/foundation.jpg">
+
+<h3>Liquid Foundation</h3>
+
+<p>$30</p>
+
+<button onclick="addToCart(2)">Add to Cart</button>
+
+<button class="buy">Buy Now</button>
+
+</div>
+
+
+<div class="product">
+
+<img src="images/eyeshadow.jpg">
+
+<h3>Eyeshadow Palette</h3>
+
+<p>$25</p>
+
+<button onclick="addToCart(3)">Add to Cart</button>
+
+<button class="buy">Buy Now</button>
+
+</div>
+
+
+</section>
+
+
+<section class="reviews">
+
+<h2>Customer Reviews</h2>
+
+<div class="review">
+
+<p>"Amazing quality makeup! I love Glitery Dust."</p>
+
+<h4>- Sarah ⭐⭐⭐⭐⭐</h4>
+
+</div>
+
+<div class="review">
+
+<p>"Best lipstick collection ever."</p>
+
+<h4>- Emma ⭐⭐⭐⭐⭐</h4>
+
+</div>
+
+</section>
+
+
+<section class="newsletter">
+
+<h2>Join Our Beauty Club</h2>
+
+<p>Get updates and offers</p>
+
+<input type="email" placeholder="Enter your email">
+
+<button>Subscribe</button>
+
+</section>
+
+
+<footer>
+
+<p>© 2026 Glitery Dust Cosmetics</p>
+
+<p>Follow us on Instagram | Facebook | TikTok</p>
+
+</footer>
+
 
 <script src="script.js"></script>
 

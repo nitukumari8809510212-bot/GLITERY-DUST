@@ -1,21 +1,33 @@
-```javascript
-let cart = JSON.parse(localStorage.getItem("cart")) || [];
+let cart = JSON.parse(localStorage.getItem("cart")) || []
 
-function addToCart(id){
+function addToCart(name,price){
 
-cart.push(id);
+cart.push({name,price})
 
-localStorage.setItem("cart",JSON.stringify(cart));
+localStorage.setItem("cart",JSON.stringify(cart))
 
-alert("Product added to cart!");
-
-}
-
-function scrollToProducts(){
-
-document.getElementById("products").scrollIntoView({
-behavior:"smooth"
-});
+alert(name + " added to cart")
 
 }
-```
+
+function loadCart(){
+
+let list = document.getElementById("cartItems")
+
+let total = 0
+
+cart.forEach(item=>{
+
+let li = document.createElement("li")
+
+li.innerText = item.name + " - ₹" + item.price
+
+list.appendChild(li)
+
+total += item.price
+
+})
+
+document.getElementById("total").innerText = "Total ₹"+total
+
+}

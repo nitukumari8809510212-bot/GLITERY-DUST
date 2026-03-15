@@ -1,0 +1,28 @@
+.slider{
+padding:40px;
+background:#fff;
+text-align:center;
+}
+
+.slider-container{
+overflow:hidden;
+}
+
+.slide-track{
+display:flex;
+animation:scroll 15s linear infinite;
+}
+
+.slide{
+min-width:200px;
+margin:20px;
+background:white;
+padding:15px;
+border-radius:10px;
+box-shadow:0 5px 10px rgba(0,0,0,0.1);
+}
+
+@keyframes scroll{
+0%{transform:translateX(0);}
+100%{transform:translateX(-500px);}
+}
